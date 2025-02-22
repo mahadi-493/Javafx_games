@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="600.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameZoneMainController">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="529.0" layoutX="14.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../assets/GameZone.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonTicTacToe" layoutX="215.0" layoutY="359.0" mnemonicParsing="false" onAction="#onTicTacToe" prefHeight="43.0" prefWidth="126.0" style="-fx-background-color: #33CCCD;" text="TicTacToe" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonHangman" layoutX="215.0" layoutY="527.0" mnemonicParsing="false" onAction="#onHangman" prefHeight="43.0" prefWidth="126.0" style="-fx-background-color: #33CCCD;" text="Hangman" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="gamepad" fitHeight="178.0" fitWidth="230.0" layoutX="167.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gamepad.gif" />
+         </image>
+      </ImageView>
+      <Text layoutX="167.0" layoutY="215.0" strikethrough="true" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME" wrappingWidth="267.73663330078125">
+         <font>
+            <Font name="Bauhaus 93" size="43.0" />
+         </font>
+      </Text>
+      <Text fx:id="userget" layoutX="200.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="126.39999999999986">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font></Text>
+      <Button layoutX="251.0" layoutY="624.0" mnemonicParsing="false" onAction="#onlogout" style="-fx-background-color: #33CCCD;" text="Logout" textFill="WHITE" />
+   </children>
+</AnchorPane>
